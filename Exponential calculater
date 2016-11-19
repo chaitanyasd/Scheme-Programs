@@ -1,0 +1,10 @@
+#USED TO FIND EXPONENTIAL POWER OF A NUMBER.
+#(exp 2 3)->8
+
+(define i 0)
+(define exp
+  (lambda(x n) 
+    ( if(= i n)
+      1
+      (* x (exp x (- n 1)))
+    )))
